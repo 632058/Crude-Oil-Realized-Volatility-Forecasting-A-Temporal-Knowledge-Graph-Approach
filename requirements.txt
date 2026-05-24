@@ -1,0 +1,16 @@
+duckdb
+ipykernel
+jupyter
+matplotlib
+numpy
+openpyxl
+pandas
+scikit-learn
+scipy
+seaborn
+shap
+statsmodels
+torch
+tqdm
+xgboost
+xlrd

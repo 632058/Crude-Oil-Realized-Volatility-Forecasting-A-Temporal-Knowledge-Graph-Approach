@@ -1,0 +1,46 @@
+# Python cache / build artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Local environment files
+.env
+.env.*
+
+# OS / editor files
+.DS_Store
+.vscode/
+.idea/
+
+# Data and generated artifacts
+data/
+results/
+baseline_results/
+gnn_embeddings/
+
+# Model checkpoints / experiment logs
+checkpoints/
+runs/
+wandb/
+*.pt
+*.pth
+*.ckpt
+
+# Large local database / serialized data files
+*.duckdb
+*.duckdb.wal
+*.pkl
