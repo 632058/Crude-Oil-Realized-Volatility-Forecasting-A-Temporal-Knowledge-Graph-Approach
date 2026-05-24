@@ -1,6 +1,6 @@
 # Crude Oil Realized Volatility Forecasting with Temporal Knowledge Graph Embeddings
 
-This repository contains a research workflow for crude oil realized volatility forecasting. The project combines traditional HAR-style volatility models with geopolitical information extracted from a temporal knowledge graph. The main interactive workflow is provided in `demo.ipynb`, which should be used for data processing, baseline training, GNN embedding analysis, rolling PCA experiments, evaluation, SHAP analysis, and result visualization.
+This repository contains a research workflow for crude oil realized volatility forecasting. The project combines traditional HAR-style volatility models with geopolitical information extracted from a temporal knowledge graph. The main interactive workflow is provided in `demo.ipynb`, which should be used for data processing, baseline training, GNN embedding analysis, rolling PCA experiments, evaluation, and result visualization.
 
 ## Project Overview
 
@@ -14,7 +14,6 @@ The workflow includes:
 - Extracting daily GNN-based geopolitical context embeddings
 - Applying rolling PCA to high-dimensional GNN embeddings
 - Evaluating models with out-of-sample metrics
-- Generating SHAP-based feature contribution analysis
 - Comparing GNN geopolitical signals with traditional GPR index signals
 
 ## Main Entry Point
@@ -34,8 +33,7 @@ The notebook contains the primary end-to-end process, including:
 3. GNN embedding generation or loading
 4. Rolling PCA feature construction
 5. Forecast model evaluation
-6. SHAP interpretation
-7. Result tables and plots
+6. Result tables and plots
 
 The standalone Python scripts are also included for reproducibility, but `demo.ipynb` is the recommended place to inspect, run, and modify the workflow step by step.
 
@@ -55,7 +53,7 @@ The standalone Python scripts are also included for reproducibility, but `demo.i
 ├── data/                       # Local input data, ignored by git
 ├── gnn_embeddings/             # Generated GNN embedding CSV files, ignored by git
 ├── baseline_results/           # Baseline prediction outputs, ignored by git
-└── results/                    # Evaluation, SHAP, and visualization outputs, ignored by git
+└── results/                    # Evaluation and visualization outputs, ignored by git
 ```
 
 ## Environment Setup
@@ -84,18 +82,12 @@ This repository includes the daily GPR Excel file:
 data/data_gpr_daily_recent.xls
 ```
 
-Please download the remaining required input data from the following placeholder URL and place the files directly under `data/`:
+Please download the remaining required input data from the following placeholder links and place the files directly under `data/`:
 
-```text
-<DATA_DOWNLOAD_URL_PLACEHOLDER>
-```
-
-Files to download:
-
-```text
-data/rv.csv
-data/gdelt_daily_bilateral_by_eventcode_add.duckdb
-```
+| File | Placeholder download link |
+| --- | --- |
+| `data/rv.csv` | `https://example.com/downloads/rv.csv` |
+| `data/gdelt_daily_bilateral_by_eventcode_add.duckdb` | `https://example.com/downloads/gdelt_daily_bilateral_by_eventcode_add.duckdb` |
 
 Expected files include:
 
@@ -119,7 +111,7 @@ In normal usage, run the relevant data preparation cells in `demo.ipynb` first b
 
 ### 1. Install Dependencies
 
-Install dependencies from `requirements.txt` before running the notebook. The project uses common scientific Python packages such as `pandas`, `numpy`, `scikit-learn`, `torch`, `duckdb`, `shap`, `xgboost`, `matplotlib`, `seaborn`, `scipy`, and `statsmodels`.
+Install dependencies from `requirements.txt` before running the notebook. The project uses common scientific Python packages such as `pandas`, `numpy`, `scikit-learn`, `torch`, `duckdb`, `xgboost`, `matplotlib`, `seaborn`, `scipy`, and `statsmodels`.
 
 ### 2. Prepare Data
 
@@ -255,24 +247,10 @@ The main comparison is between the GNN-enhanced model and the baseline HAR-famil
 
 The notebook prints summary tables and saves CSV files under `results/`.
 
-### 7. Run SHAP Analysis
-
-The notebook includes SHAP-based interpretation for the rolling forecast models. SHAP values are used to inspect how much the GNN PCA component contributes to volatility forecasts over time.
-
-Generated SHAP files include:
-
-```text
-results/shap_timeseries_HAR-OVX+RollPCA(1)_Target_1D.csv
-results/shap_timeseries_HAR-OVX+RollPCA(1)_Target_1M.csv
-```
-
-These files can be used to compare the contribution of GNN geopolitical embeddings against traditional GPR variables.
-
-### 8. Generate Plots and Comparisons
+### 7. Generate Plots and Comparisons
 
 The final analysis sections in `demo.ipynb` generate visual comparisons, including:
 
-- Rolling SHAP contribution plots
 - GNN PC1 contribution over time
 - GPR contribution over time
 - Normalized GNN versus GPR contribution comparison
