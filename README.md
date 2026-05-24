@@ -76,7 +76,26 @@ Then open `demo.ipynb`.
 
 ## Required Data
 
-The workflow expects local data files under the `data/` directory. This directory is intentionally ignored by git because it may contain large database files, generated mappings, serialized objects, and research data.
+The workflow expects local data files under the `data/` directory. Most data files are intentionally ignored by git because they may contain large database files, generated mappings, serialized objects, and research data.
+
+This repository includes the daily GPR Excel file:
+
+```text
+data/data_gpr_daily_recent.xls
+```
+
+Please download the remaining required input data from the following placeholder URL and place the files directly under `data/`:
+
+```text
+<DATA_DOWNLOAD_URL_PLACEHOLDER>
+```
+
+Files to download:
+
+```text
+data/rv.csv
+data/gdelt_daily_bilateral_by_eventcode_add.duckdb
+```
 
 Expected files include:
 

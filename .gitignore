@@ -27,7 +27,8 @@ env/
 .idea/
 
 # Data and generated artifacts
-data/
+data/*
+!data/data_gpr_daily_recent.xls
 results/
 baseline_results/
 gnn_embeddings/
