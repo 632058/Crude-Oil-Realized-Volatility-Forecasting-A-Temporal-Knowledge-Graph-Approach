@@ -84,10 +84,10 @@ data/data_gpr_daily_recent.xls
 
 Please download the remaining required input data from the following placeholder links and place the files directly under `data/`:
 
-| File | Placeholder download link |
+| File | download link |
 | --- | --- |
-| `data/rv.csv` | `https://example.com/downloads/rv.csv` |
-| `data/gdelt_daily_bilateral_by_eventcode_add.duckdb` | `https://example.com/downloads/gdelt_daily_bilateral_by_eventcode_add.duckdb` |
+| `data/rv.csv` | `https://drive.google.com/file/d/16R1XywcAtZAM-7g46PXJ8J4Fsf4Nqkgr/view?usp=drive_link` |
+| `data/gdelt_daily_bilateral_by_eventcode_add.duckdb` | `https://drive.google.com/file/d/1-pMpwAwvT748Z5AiquH-_M5E-7kALxUR/view?usp=drive_link` |
 
 Expected files include:
 
