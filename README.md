@@ -42,7 +42,6 @@ The standalone Python scripts are also included for reproducibility, but `demo.i
 ```text
 .
 ├── demo.ipynb                  # Main notebook for data processing, training, evaluation, and analysis
-├── prepare_data.ipynb          # Additional data preparation notebook
 ├── data_preparation.py         # Script for preparing GNN-ready database tables and RV + GPR data
 ├── get_embedding.py            # Script for extracting GNN geopolitical context embeddings
 ├── run_baseline.py             # Script for HAR-family baseline forecasting
