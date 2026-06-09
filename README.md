@@ -86,8 +86,8 @@ Please download the remaining required input data from the following placeholder
 
 | File | download link |
 | --- | --- |
-| `data/rv.csv` | `https://drive.google.com/file/d/16R1XywcAtZAM-7g46PXJ8J4Fsf4Nqkgr/view?usp=drive_link` |
-| `data/gdelt_daily_bilateral_by_eventcode_add.duckdb` | `https://drive.google.com/file/d/1-pMpwAwvT748Z5AiquH-_M5E-7kALxUR/view?usp=drive_link` |
+| `data/rv.csv` | `https://drive.google.com/file/d/1k2wC07BhGba0eCeNQYOvT55KtQ85kFtu/view?usp=sharing` |
+| `data/gdelt_daily_bilateral_by_eventcode_add.duckdb` | `https://drive.google.com/file/d/1bu-a9Su7jQYNnEWM95ViXYqfG2H4hduC/view?usp=sharing` |
 
 Expected files include:
 
