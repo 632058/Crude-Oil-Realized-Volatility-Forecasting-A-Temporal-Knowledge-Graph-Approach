@@ -158,8 +158,6 @@ The baseline script and notebook use rolling Ridge regression with standardized 
 - `Target_2W`
 - `Target_3W`
 - `Target_1M`
-- `Target_2M`
-- `Target_3M`
 
 Baseline output files are written to:
 
