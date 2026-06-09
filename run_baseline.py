@@ -224,9 +224,7 @@ if __name__ == "__main__":
         "Target_1W": 5,
         "Target_2W": 10,
         "Target_3W": 15,
-        "Target_1M": 22,
-        "Target_2M": 44,
-        "Target_3M": 66,
+        "Target_1M": 22
     }
 
     WARMUP_STEPS = 252
